@@ -1,49 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Galería de Cuadros</title>
-    <link rel="stylesheet" href="css/estilo.css">
+  <meta charset="UTF-8">
+  <title>Galería de Óleos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+      text-align: center;
+    }
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 20px;
+    }
+    .galeria img {
+      width: 250px;     /* tamaño de las imágenes */
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+    .galeria img:hover {
+      transform: scale(1.05); /* efecto al pasar el ratón */
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Arte en Lienzo</h1>
-        <p>Cuadros hechos a mano con pasión</p>
-    </header>
+  <h1>Galería de Cuadros al Óleo</h1>
+  <div class="galeria">
+    <img src="imagenes/oleo1.jpg" alt="Óleo 1">
+    <img src="imagenes/oleo2.jpg" alt="Óleo 2">
+    <img src="imagenes/oleo3.jpg" alt="Óleo 3">
+<img src="imagenes/oleo4.jpg" alt="Óleo 4">
+<img src="imagenes/oleo5.jpg" alt="Óleo 5">
+  </div>
 
-    <section class="galeria">
-        <!-- CUADRO 1 -->
-        <div class="cuadro">
-            <img src="img/cuadro1.jpg" alt="Paisaje Marina">
-            <h3>Paisaje Marina</h3>
-            <p>Óleo sobre lienzo - 50x70cm</p>
-            <p class="precio">$3200.00</p>
-            <button>Comprar</button>
-        </div>
-
-        <!-- CUADRO 2 -->
-        <div class="cuadro">
-            <img src="img/cuadro2.jpg" alt="Paisaje Marina con chicas">
-            <h3>Paisaje Marina</h3>
-            <p>Acrílico - 100x50cm</p>
-            <p class="precio">$1500.00</p>
-            <button>Comprar</button>
-        </div>
-<!-- CUADRO 3 -->
-        <div class="cuadro">
-            <img src="img/cuadro3.jpg" alt="Cuadro Marina">
-            <h3>Cerro Gordo Marina</h3>
-            <p>Óleo sobre lienzo - 100x50cm</p>
-            <p class="precio">$1200.00</p>
-            <button>Comprar</button>
-        </div>
-
-        <!-- Añade más cuadros copiando el bloque anterior -->
-    </section>
-
-    <footer>
-        <p>Contacto: antonioburgos551@gmail.com | Tel: +34 697 252 404</p>
-    </footer>
 </body>
 </html>
+

@@ -40,3 +40,50 @@
 </body>
 </html>
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Boton con Animación de Color</title>
+    <style>
+        /* Estilos base del botón */
+        .boton-animado {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            color: #ffffff;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            
+            /* Propiedades de la animación */
+            animation-name: cambio-color;
+            animation-duration: 5s; /* La animación dura 5 segundos */
+            animation-timing-function: linear;
+            animation-iteration-count: infinite; /* Se repite infinitamente */
+        }
+
+        /* Definición de la animación de cambio de color */
+        @keyframes cambio-color {
+            0%   { background-color: #3498db; } /* Empieza con azul */
+            25%  { background-color: #e74c3c; } /* Pasa a rojo */
+            50%  { background-color: #2ecc71; } /* Pasa a verde */
+            75%  { background-color: #f1c40f; } /* Pasa a amarillo */
+            100% { background-color: #3498db; } /* Vuelve a azul para un ciclo perfecto */
+        }
+    </style>
+</head>
+<body>
+
+    <a href="https://4gon1.github.io/futura-tienda-arte/" class="boton-animado" target="_blank">
+        tienda-arte
+    </a>
+
+</body>
+</html>
+
+
